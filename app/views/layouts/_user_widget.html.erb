@@ -1,5 +1,6 @@
 <% if user_signed_in? %>
   <%= link_to '[Logout]', destroy_user_session_path, :method => :delete %>
+  <%= link_to '[My Account]', edit_user_registration_path %>
   <p>Welcome <%= current_user.first_name %>
   </p>
 <% else %>
